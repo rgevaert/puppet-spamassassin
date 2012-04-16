@@ -10,7 +10,7 @@ class spamassassin::config {
       ensure  => $ensure,
       owner   => root,
       group   => root,
-      mode    => '0444',
+      mode    => '0644',
       content => template($spamassassin::localcf);
   }
 
